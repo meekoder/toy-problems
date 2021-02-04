@@ -42,10 +42,10 @@ const fn = (row, col, grid, c) => {
     }
 
     grid[row][col] = 3;
-    fn(row - 1, col, grid, c + 1)
-    fn(row + 1, col, grid, c+ 1)
-    fn(row, col - 1, grid, c+ 1)
-    fn(row, col + 1, grid, c+ 1)
+    fn(row - 1, col, grid, c + 1);
+    fn(row + 1, col, grid, c + 1);
+    fn(row, col - 1, grid, c + 1);
+    fn(row, col + 1, grid, c + 1);
     grid[row][col] = 0;
     
     return count;
