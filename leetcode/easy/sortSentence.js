@@ -8,7 +8,7 @@ var sortSentence = function(s) {
   for (let i = 0; i < split.length; i++) {
     const curr = split[i];
     const idx = curr.slice(curr.length - 1) - 1;
-    results[Number(idx)] = curr.slice(0, curr.length - 1);
+    results[idx] = curr.slice(0, curr.length - 1);
   }
   return results.join(' ');
 };
